@@ -2,19 +2,19 @@ package arrays
 
 func Sum(arr []int) int {
 	var result int
-
 	for _, num := range arr {
 		result += num
 	}
+
 	return result
 }
 
 func SumAll(numbersToSum ...[]int) []int {
 	var sums []int
-
 	for _, numbers := range numbersToSum {
 		sums = append(sums, Sum(numbers))
 	}
+
 	return sums
 
 }
